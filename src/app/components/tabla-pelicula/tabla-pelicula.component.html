@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Estreno</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Cantidad publico</th>
+            <th scope="col">Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pelicula of listaPeliculas">
+            <td>{{pelicula.id}}</td>
+            <td>{{pelicula.nombre}}</td>
+            <td>{{pelicula.fecha_estreno}}</td>
+            <td>{{pelicula.tipo}}</td>
+            <td>{{pelicula.cantidad_publico}}</td>
+            <td>{{pelicula.foto_pelicula}}</td>
+            <td><button class="btn btn-primary" (click)="exponerPelicula(pelicula)">Ver mas</button></td>
+        </tr>
+    </tbody>
+</table>
