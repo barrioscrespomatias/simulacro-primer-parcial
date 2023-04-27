@@ -2,16 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PeliculaListadoRoutingModule } from './pelicula-listado-routing.module';
-import { PeliculaListadoComponent } from './pelicula-listado.component';
-
-
+import { TablaPeliculaComponent } from '../components/tabla-pelicula/tabla-pelicula.component';
 @NgModule({
-  declarations: [
-    PeliculaListadoComponent
-  ],
-  imports: [
-    CommonModule,
-    PeliculaListadoRoutingModule
-  ]
+  declarations: [ TablaPeliculaComponent],
+  imports: [CommonModule, PeliculaListadoRoutingModule],
 })
-export class PeliculaListadoModule { }
+export class PeliculaListadoModule {}
