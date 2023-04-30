@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./detalle-pelicula.component.css']
 })
 export class DetallePeliculaComponent {
-  @Input() item:any;
+  @Input() peliculaDesdeTabla:any;
 }
