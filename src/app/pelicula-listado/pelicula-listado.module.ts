@@ -15,3 +15,4 @@ import { PeliculaListadoComponent } from './pelicula-listado.component';
   ]
 })
 export class PeliculaListadoModule { }
+//TODO hacer algo
