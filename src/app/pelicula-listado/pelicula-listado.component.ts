@@ -7,12 +7,12 @@ import { Pelicula } from '../clases/pelicula';
   styleUrls: ['./pelicula-listado.component.css'],
 })
 export class PeliculaListadoComponent {
-  @Input() peliculaDesdeTabla:any;
-  @Output() onExponerPeliculaDePeliculaListado = new EventEmitter<Pelicula>();
 
+  @Output() onEnviarItemHaciaPadre = new EventEmitter<Pelicula>();
   pelicula = new Pelicula('','','',new Date(),0,'');
 
-  recibirPelicula(peliculaRecibida : Pelicula){
-    this.pelicula = peliculaRecibida;
+  enviarItemHaciaPadre(pelicula : Pelicula){
+    this.pelicula = pelicula;
+    this.onEnviarItemHaciaPadre.emit(pelicula);
   }
 }

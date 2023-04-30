@@ -9,11 +9,9 @@ import { Pelicula } from '../clases/pelicula';
 
 export class BusquedaComponent {
 
-  @Input() peliculaDesdeTabla:any;
-
   pelicula : Pelicula = new Pelicula('','','',new Date(),0,'');
 
-  recibirPeliculaDePeliculaListado(peliculaRecibida : Pelicula){
+  recibirItemDeHijo(peliculaRecibida : Pelicula){
     this.pelicula = peliculaRecibida;
   }
 }

@@ -15,9 +15,9 @@ export class TablaPeliculaComponent {
   ];
 
   
-@Output() onExponerPelicula = new EventEmitter<Pelicula>();
+@Output() onEnviarItemHaciaPadre = new EventEmitter<Pelicula>();
 
-exponerPelicula(peliculaRecibida: Pelicula){
-    this.onExponerPelicula.emit(peliculaRecibida)
+enviarItemHaciaPadre(pelicula: Pelicula){
+    this.onEnviarItemHaciaPadre.emit(pelicula)
   }  
 }

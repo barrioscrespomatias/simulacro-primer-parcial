@@ -1,1 +1,2 @@
-<app-tabla-pelicula (onExponerPeliculaDePeliculaListado)="recibirPelicula($event)"></app-tabla-pelicula>
+<!-- app html necesita saber quien lo emite: En este caso app-tabla-pelicula emite con @Output() onExponerItemHaciaPadre = new EventEmitter<Pelicula>(); -->
+<app-tabla-pelicula (onEnviarItemHaciaPadre)="enviarItemHaciaPadre($event)"></app-tabla-pelicula>
