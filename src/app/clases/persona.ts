@@ -1,6 +1,3 @@
-import { Validators } from '@angular/forms';
-import { FormBuilder } from '@angular/forms';
-
 export class Persona {
   id: string = '';
   nombre: string = '';
