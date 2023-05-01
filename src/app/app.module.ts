@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { PersonaComponent } from './pages/formularios/persona/persona.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    PersonaComponent,
   ],
   imports: [
     BrowserModule,
