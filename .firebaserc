@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "miapp-e29e9": {
+      "hosting": {
+        "simulacro-primer-parcial": [
+          "miapp-e29e9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "miapp-e29e9"
+  }
+}
