@@ -13,5 +13,9 @@ export class AppComponent {
     this.firebaseDb.traer();
   }
 
+  guardar(){
+    this.firebaseDb.guardar();
+  }
+
   title = 'simulacro-primer-parcial';
 }
