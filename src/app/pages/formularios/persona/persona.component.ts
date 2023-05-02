@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Component } from '../../../clases/pelicula';
+import { Persona } from '../../../clases/persona';
 
 @Component({
   selector: 'app-persona',
@@ -7,7 +7,5 @@ import { Component } from '../../../clases/pelicula';
   styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent {
-
-  persona : Persona = new Persona();
-
+  persona : Persona = new Persona('','',0,'');
 }

@@ -6,6 +6,8 @@ import { BusquedaComponent } from './busqueda.component';
 import { TablaPeliculaComponent } from '../components/tabla-pelicula/tabla-pelicula.component';
 import { DetallePeliculaComponent } from '../components/detalle-pelicula/detalle-pelicula.component';
 import { PeliculaListadoComponent } from '../pelicula-listado/pelicula-listado.component';
+import { PersonaComponent } from '../pages/formularios/persona/persona.component';
+import { PersonaInputComponent } from '../components/persona/persona-input/persona-input.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { PeliculaListadoComponent } from '../pelicula-listado/pelicula-listado.c
     BusquedaComponent,
     TablaPeliculaComponent,
     DetallePeliculaComponent,
-    PeliculaListadoComponent
+    PeliculaListadoComponent,
+    PersonaComponent,
+    PersonaInputComponent
   ],
   imports: [
     CommonModule,
