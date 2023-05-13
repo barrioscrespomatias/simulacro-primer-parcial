@@ -11,10 +11,10 @@ export class Persona {
 
   // constructor(private fb: FormBuilder) {}
   constructor(
-    id: string,
-    nombre: string,
-    edad: number,
-    apellido: string
+    id: string = '',
+    nombre: string = '',
+    edad: number = 0,
+    apellido: string = ''
   ) {
     (this.id = id),
       (this.nombre = nombre),

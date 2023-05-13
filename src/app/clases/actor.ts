@@ -9,13 +9,13 @@ export class Actor extends Persona {
 
   // constructor(private fb: FormBuilder) {}
   constructor(
-    id: string,
-    nombre: string,
-    edad: number,
-    apellido: string,
-    nacionalidad: string
+    id: string = '',
+    nombre: string = '',
+    edad: number = 0,
+    apellido: string = '',
+    nacionalidad: string = ''
   ) {
     super(id, nombre, edad, apellido);
-    this.nacionalidad = nacionalidad;
+    this.nacionalidad = nacionalidad
   }
 }

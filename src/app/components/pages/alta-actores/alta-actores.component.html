@@ -1,0 +1,19 @@
+<!-- <form>
+  <div class="form-group" *ngFor="let item of actor | keyvalue">
+    <app-alta-actor [clave]="item.key"></app-alta-actor>
+  </div>
+  <button class="submit-btn" type="submit" >Submit</button>
+</form> -->
+
+
+<section class="get-in-touch">
+  <h1 class="title">Alta actor</h1>
+  <form class="contact-form row">
+     <div class="form-field col-lg-6" *ngFor="let item of actor | keyvalue">
+        <app-alta-actor class="app-alta-actor" [clave]="item.key"></app-alta-actor>
+     </div>
+     <div class="form-field col-lg-12">
+        <input class="submit-btn" type="submit" value="Submit">
+     </div> 
+  </form>
+</section>
