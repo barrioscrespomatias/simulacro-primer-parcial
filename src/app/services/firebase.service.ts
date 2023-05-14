@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Persona } from '../clases/persona';
+import { Persona } from '../clases/persona/persona';
 import {
   Firestore,
   collection,

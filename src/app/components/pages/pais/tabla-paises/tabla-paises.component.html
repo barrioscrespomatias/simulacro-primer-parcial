@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Bandera</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of listaPaises | async">
+            <td>{{ pais.name }}</td>
+            <td>{{ pais.capital }}</td>
+            <td> <img src="{{ pais.flag }}" width="50" height="50" alt=""></td>
+            <!-- <td><button class="btn btn-primary" (click)="enviarItemHaciaPadre(pais)">Seleccionar</button></td> -->
+        </tr>
+    </tbody>
+</table>

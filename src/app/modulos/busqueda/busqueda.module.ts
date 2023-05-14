@@ -8,6 +8,8 @@ import { DetallePeliculaComponent } from '../../components/presentacion/pelicula
 import { PeliculaListadoComponent } from '../pelicula-listado/pelicula-listado.component';
 import { AltaActoresComponent } from '../../components/pages/alta-actores/alta-actores.component';
 import { AltaActorComponent } from '../../components/presentacion/actor/alta-actor/alta-actor.component';
+import { TablaPaisesComponent } from '../../components/pages/pais/tabla-paises/tabla-paises.component';
+
 
 
 @NgModule({
@@ -17,11 +19,12 @@ import { AltaActorComponent } from '../../components/presentacion/actor/alta-act
     DetallePeliculaComponent,
     PeliculaListadoComponent,
     AltaActoresComponent,
-    AltaActorComponent
+    AltaActorComponent,
+    TablaPaisesComponent
   ],
   imports: [
     CommonModule,
-    BusquedaRoutingModule
+    BusquedaRoutingModule,
   ]
 })
 export class BusquedaModule { }

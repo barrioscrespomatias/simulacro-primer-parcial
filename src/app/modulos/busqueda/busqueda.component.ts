@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pelicula } from '../../clases/pelicula';
+import { Pelicula } from '../../clases/pelicula/pelicula';
 
 @Component({
   selector: 'app-busqueda',

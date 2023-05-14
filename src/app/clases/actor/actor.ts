@@ -1,4 +1,4 @@
-import { Persona } from './persona';
+import { Persona } from '../persona/persona';
 
 export class Actor extends Persona {
   nacionalidad: string;

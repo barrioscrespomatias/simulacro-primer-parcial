@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Actor } from 'src/app/clases/actor';
+import { Actor } from 'src/app/clases/actor/actor';
 
 @Component({
   selector: 'app-alta-actores',
