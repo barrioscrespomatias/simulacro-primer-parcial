@@ -6,8 +6,8 @@ import { BusquedaComponent } from './busqueda.component';
 import { TablaPeliculaComponent } from '../../components/tabla-pelicula/tabla-pelicula.component';
 import { DetallePeliculaComponent } from '../../components/presentacion/pelicula/detalle-pelicula/detalle-pelicula.component';
 import { PeliculaListadoComponent } from '../pelicula-listado/pelicula-listado.component';
-import { AltaActoresComponent } from '../../components/pages/alta-actores/alta-actores.component';
-import { AltaActorComponent } from '../../components/presentacion/actor/alta-actor/alta-actor.component';
+// import { AltaActoresComponent } from '../../components/pages/alta-actores/alta-actores.component';
+// import { AltaActorComponent } from '../../components/presentacion/actor/alta-actor/alta-actor.component';
 import { TablaPaisesComponent } from '../../components/pages/pais/tabla-paises/tabla-paises.component';
 
 
@@ -18,9 +18,9 @@ import { TablaPaisesComponent } from '../../components/pages/pais/tabla-paises/t
     TablaPeliculaComponent,
     DetallePeliculaComponent,
     PeliculaListadoComponent,
-    AltaActoresComponent,
-    AltaActorComponent,
-    TablaPaisesComponent
+    // AltaActoresComponent,
+    // AltaActorComponent,
+    // TablaPaisesComponent
   ],
   imports: [
     CommonModule,

@@ -11,7 +11,7 @@ import { HttpService } from 'src/app/services/http/http.service';
 })
 export class TablaPaisesComponent {
 
-  listaPaises!: Observable<PaisInterface[]>;
+  listaPaises!: Observable<Pais[]>;
   suscripcion!: Subscription;
 
   constructor(private httpService : HttpService){    
@@ -20,12 +20,12 @@ export class TablaPaisesComponent {
   ngOnInit(){
     this.listaPaises = this.httpService.Get().pipe(
       map((response: any[]) => response.map(pais => {
-        const paisInterface: PaisInterface = {
+        const paisClass: Pais = {
           name: pais.name.common,
           capital: pais.capital?.[0] ?? '',
           flag: pais.flags?.svg ?? ''
         };
-        return paisInterface;
+        return paisClass;
       }))
     );
   }
@@ -34,9 +34,9 @@ export class TablaPaisesComponent {
     this.suscripcion.unsubscribe();
   }
 
-  @Output() onEnviarItemHaciaPadre = new EventEmitter<Pais>();
+  @Output() onEnviarItemHaciaPadre = new EventEmitter<PaisInterface>();
 
-  enviarItemHaciaPadre(pais: Pais){
+  enviarItemHaciaPadre(pais: PaisInterface){
       this.onEnviarItemHaciaPadre.emit(pais)
     }  
 }

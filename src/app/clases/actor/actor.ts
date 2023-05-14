@@ -2,6 +2,7 @@ import { Persona } from '../persona/persona';
 
 export class Actor extends Persona {
   nacionalidad: string;
+  flag: string;
   
   // onSubmit() {
   //   // TODO: Use EventEmitter with form value
@@ -13,9 +14,11 @@ export class Actor extends Persona {
     nombre: string = '',
     edad: number = 0,
     apellido: string = '',
-    nacionalidad: string = ''
+    nacionalidad: string = '',
+    flag: string = ''
   ) {
     super(id, nombre, edad, apellido);
-    this.nacionalidad = nacionalidad
+    this.nacionalidad = nacionalidad,
+    this.flag = flag;
   }
 }

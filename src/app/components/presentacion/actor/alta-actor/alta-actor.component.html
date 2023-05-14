@@ -1,5 +1,21 @@
 <!-- <label for="{{clave}}" class="label">{{clave}}</label>
 <input type="input" class="input-text js-input" id="{{clave}}" placeholder="Ingrese {{clave}}"> -->
 
-<input id="{{clave}}" class="input-text js-input" type="text" required>
+<!-- <input id="{{clave}}" class="input-text js-input" type="text" required>
 <label class="label-contact-form" for="{{clave}}">{{clave}}</label>
+
+<h1 ngIf="{{clave}} == 'pais' ">Dato tabla{{pais?.name}}</h1> -->
+<!-- <h1>Dato tabla{{pais?.name}}</h1> -->
+
+<!-- //Formulario dinamico desde la clase -->
+<!-- IF -->
+<ng-container *ngIf="propId === 'nacionalidad'; else otroBloque">
+    <input id="{{propId}}" class="input-text js-input" type="text" value="{{pais?.name}}" required>
+    <label class="label-contact-form" for="{{propId}}">{{propId}}</label>
+</ng-container>
+
+<!-- ELSE IF -->
+<ng-template #otroBloque>
+    <input id="{{propId}}" class="input-text js-input" type="text" required>
+    <label class="label-contact-form" for="{{propId}}">{{propId}}</label>
+</ng-template>
