@@ -6,9 +6,16 @@
           "miapp-e29e9"
         ]
       }
+    },
+    "simulacro-parcial-32e5b": {
+      "hosting": {
+        "simulacro-primer-parcial": [
+          "simulacro-parcial-32e5b"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "miapp-e29e9"
+    "default": "simulacro-parcial-32e5b"
   }
 }

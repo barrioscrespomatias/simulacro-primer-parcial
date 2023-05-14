@@ -1,39 +1,35 @@
-<!-- <form>
-  <div class="form-group" *ngFor="let item of actor | keyvalue">
-    <app-alta-actor [clave]="item.key"></app-alta-actor>
-  </div>
-  <button class="submit-btn" type="submit" >Submit</button>
-</form> -->
 <div class="row">
-  <section class="get-in-touch col-sm-9">
-    <h1 class="title">Alta actor</h1>
-    <form class="contact-form row">
-          <div class="form-field col-lg-12">
+   <section class="get-in-touch">
+      <h1 class="title">Crear actor</h1>
+      <form class="contact-form row" [formGroup]="form">
+         <div class="form-field col-lg-6">
+            <input id="nombre" formControlName="nombre" class="input-text js-input" type="text" required>
+            <label class="label" for="nombre">Nombre</label>
+         </div>
+         <div class="form-field col-lg-6 ">
+            <input id="apellido" formControlName="apellido" class="input-text js-input" type="text" required>
+            <label class="label" for="apellido">Apellido</label>
+         </div>
+         <div class="form-field col-lg-6 ">
+            <input id="edad" formControlName="edad" class="input-text js-input" type="number" required>
+            <label class="label" for="edad">Edad</label>
+         </div>
+         <div class="form-field col-lg-6 ">
+            <!-- <input id="nacionalidad" formControlName="nacionalidad" class="input-text js-input" type="text" value="{{paisDesdeTabla?.name}}" required> -->
+            <input id="nacionalidad" formControlName="nacionalidad" class="input-text js-input" type="text" value="{{paisDesdeTabla?.name}}" readonly required>
+            <label class="label" for="nacionalidad">Nacionalidad</label>
+         </div>
+         <div class="col-lg-6">
+            <!-- <input id="nacionalidad" formControlName="nacionalidad" class="input-text js-input" type="text" value="{{paisDesdeTabla?.name}}" required> -->
+            <input id="flag" formControlName="flag" type="hidden">
+         </div>
+         <div class="form-field col-lg-12">
+            <input class="submit-btn" (click)="CrearActor()" value="Submit">
+         </div>
+      </form>
+   </section>
 
-            <input id="nombre" class="input-text js-input" type="text" required>
-            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
-
-            <input id="apellido" class="input-text js-input" type="text" required>
-            <label class="label-contact-form" for="apellido">Ingrese nacionalidad</label>
-
-            <input id="nacionalidad" class="input-text js-input" type="text" required>
-            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
-
-            <input id="nacionalidad" class="input-text js-input" type="text"  required>
-            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
-
-            <input id="nacionalidad" class="input-text js-input" type="text" value="{{pais?.name}}" required>
-            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
-          </div>
-      <div class="form-field col-lg-12">
-        <input class="submit-btn" value="Crear" (click)="CrearActor()">
-        <!-- <input class="submit-btn" type="submit" value="Submit"> -->
-      </div>
-    </form>
-  </section>
-
-  <section class="paises col-sm-3">
-    <app-tabla-paises (onEnviarItemHaciaPadre)="recibirItemDeHijo($event)"> </app-tabla-paises>
-  </section>
-
+   <section class="paises col-sm-3">
+      <app-tabla-paises (onEnviarItemHaciaPadre)="recibirItemDeHijo($event)"> </app-tabla-paises>
+   </section>
 </div>
