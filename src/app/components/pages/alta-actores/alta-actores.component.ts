@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Actor } from 'src/app/clases/actor/actor';
+import { Pais } from 'src/app/clases/pais/pais';
 import { PaisInterface } from 'src/app/interfaces/pais/pais';
 
 @Component({
@@ -11,6 +12,7 @@ import { PaisInterface } from 'src/app/interfaces/pais/pais';
 export class AltaActoresComponent {
 
   form!: FormGroup;
+  @Input() pais: Pais = new Pais();
 
   ngOnInit(): void {
     this.form = new FormGroup({

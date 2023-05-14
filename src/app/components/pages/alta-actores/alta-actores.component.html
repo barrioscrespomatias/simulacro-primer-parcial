@@ -8,14 +8,23 @@
   <section class="get-in-touch col-sm-9">
     <h1 class="title">Alta actor</h1>
     <form class="contact-form row">
-      <div *ngFor="let item of actor | keyvalue">
-
-        <ng-container *ngIf="item.key !=='flag'">
           <div class="form-field col-lg-12">
-            <app-alta-actor [pais]="paisDesdeTabla" class="app-alta-actor" [propId]="item.key"></app-alta-actor>
+
+            <input id="nombre" class="input-text js-input" type="text" required>
+            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
+
+            <input id="apellido" class="input-text js-input" type="text" required>
+            <label class="label-contact-form" for="apellido">Ingrese nacionalidad</label>
+
+            <input id="nacionalidad" class="input-text js-input" type="text" required>
+            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
+
+            <input id="nacionalidad" class="input-text js-input" type="text"  required>
+            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
+
+            <input id="nacionalidad" class="input-text js-input" type="text" value="{{pais?.name}}" required>
+            <label class="label-contact-form" for="nombre">Ingrese nacionalidad</label>
           </div>
-        </ng-container>
-      </div>
       <div class="form-field col-lg-12">
         <input class="submit-btn" value="Crear" (click)="CrearActor()">
         <!-- <input class="submit-btn" type="submit" value="Submit"> -->
