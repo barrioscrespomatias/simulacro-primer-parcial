@@ -107,8 +107,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "simulacro-primer-parcial:build:production",
-            "firebaseProject": "miapp-e29e9",
-            "firebaseHostingSite": "miapp-e29e9"
+            "firebaseProject": "simulacro-parcial-32e5b",
+            "firebaseHostingSite": "simulacro-parcial-32e5b"
           }
         }
       }

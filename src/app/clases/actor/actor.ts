@@ -12,8 +12,8 @@ export class Actor extends Persona {
   constructor(
     id: string = '',
     nombre: string = '',
-    edad: number = 0,
     apellido: string = '',
+    edad: number = 0,
     nacionalidad: string = '',
     flag: string = ''
   ) {

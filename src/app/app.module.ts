@@ -13,6 +13,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 // import { AltaActorComponent } from './components/presentacion/actor/alta-actor/alta-actor.component';
 // import { AltaActorComponent } from './components/presentacion/actor/alta-actor/alta-actor.component';
 import { HttpClientModule } from '@angular/common/http';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
-    HttpClientModule
+    HttpClientModule,
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]
